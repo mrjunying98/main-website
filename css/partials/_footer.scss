@@ -1,0 +1,42 @@
+.ath-footer {
+  position: relative;
+  padding: 35px 0;
+
+  &--logo {
+    .logo {
+      display: inline-block;
+      text-decoration: none;
+      img {
+        display: inline-block;
+        width: auto;
+        height: 40px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  @include media-break-point-mobile {
+    padding: 30px 0;
+    &--logo {
+      text-align: center;
+      width: 100%;
+      .logo {
+        img {
+          height: 35px;
+        }
+      }
+    }
+    &--nav {
+      display: none;
+    }
+  }
+
+  .copyright {
+    padding-top: 25px;
+    color: white;
+
+    .rbf-email-img {
+      transform: translateY(0.2rem);
+    }
+  }
+}

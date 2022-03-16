@@ -1,0 +1,79 @@
+//Palette
+$white: #ffffff;
+$white-hover: #F2F2F2;
+$black: #000000;
+
+$-dark-palette_0: #0D0D2B;
+$-dark-palette_1: #1f253f;
+
+$-gray-palette_0: #FBFBFB;
+$-gray-palette_1: #E0E0E0;
+$-gray-palette_2: #A6A7A9;
+$-gray-palette_3: #888888;
+$-gray-palette_4: #586C7A;
+$-gray-palette_5: #929EA9;
+$-gray-palette_5: #606060;
+
+$-blue-palette_0: #3671E9;
+$-blue-palette_1: #004c93;
+$-green-palette_0: #27ae60;
+$-yellow-palette_0: #ffbf27;
+$-orange-palette_0: #FF9314;
+$-red-palette_0: #ff380e;
+$-purple-palette_0: #B708F5;
+$-ment-palette_0: #7dd1db;
+
+$-twitter-color: #0D77F0;
+$-discord-color: #5662F6;
+
+$-red-palette_0: #EB5757;
+
+
+// Main color
+$-color-primary: $-orange-palette_0;
+$-color-primary-darker: #D62424;
+$-color-secondary: #F3A000;
+
+
+// Text Colors
+$-color-text-primary: #E0E0E0;
+$-color-text-secondary: #505053;
+$-color-text-light: #B7B7B7;
+
+$-color-form-placeholder: #939393;
+
+// Border Colors
+$-border-primary: #D9D9D9;
+
+
+//Global Size
+$size: 14px;
+$line-height: 1.5;
+
+//Fonts
+$font-primary: 'Rubik', sans-serif;
+$font-secondary: 'Bebas Neue', cursive;;
+
+//Background
+$bg-main: $-dark-palette_0;
+
+//Gradient
+$-gradient-1: linear-gradient(135deg, $-orange-palette_0 0%,$-red-palette_0 100%);
+$-gradient-2: linear-gradient(135deg, $-blue-palette_0 0%,$-ment-palette_0 100%);
+
+//MEDIA-SIZE
+$desktop: 1540;
+$laptop: 1200;
+$tablet: 991;
+$mobile: 767;
+$landscape: landscape;
+
+//pop-up
+$dark: #0D0F18;
+$dark-2: #111214;
+$dark-2-08: rgba($dark-2, .8);
+$primary: #7A31AC;
+
+$text-shadow: 0px 4px 45px #AF60FF;
+$box-shadow: 1px 4px 19px rgba(108, 88, 234, 0.6);
+$text-shadow-2: 0px 4px 45px $dark;

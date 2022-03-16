@@ -1,0 +1,54 @@
+/* ======= Global ======= */
+body {
+  font-family: $font-primary;
+  line-height: 1.4;
+  font-size: $size;
+  background: $bg-main;
+  //cursor: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  @include transition(.3);
+}
+
+.collapse {
+  display: none;
+  @include transition(.3);
+  &.show {
+    display: block;
+  }
+}
+
+// Layout
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+.wrapper-cut {
+  overflow: hidden;
+}
+.container {
+  @include media-break-point-mobile {
+    max-width: 400px;
+  }
+}
+
+// Elements
+img {
+  max-width: 100%;
+}
+//a, button {
+//  cursor: none;
+//}
+// Transition Default Components
+input, a, button, select, textarea {
+  outline: none !important;
+  @include transition(0.3);
+}
+
+

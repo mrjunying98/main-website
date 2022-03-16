@@ -1,0 +1,269 @@
+.ath-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 16px 25px;
+  border-radius: 32px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    text-shadow: 0 0 10px rgba($white, .6);
+  }
+
+  &.btn-primary {
+    background: $-color-primary;
+    color: $white;
+    &.btn-icon-right {
+      i {
+        color: $-color-primary;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 40px rgba($-color-primary, .6);
+    }
+  }
+  &.btn-outline {
+    border: 2px solid $-color-primary;
+    color: $-color-primary;
+    &:hover {
+      text-shadow: none;
+      color: #ff9314;
+      background: rgba($-color-primary, .1);
+    }
+  }
+  &.btn-icon-right {
+    padding-right: 73px;
+
+    i {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: $white;
+      font-size: 18px;
+      color: #000;
+    }
+  }
+  &.btn-twitter {
+    background: $-twitter-color;
+    color: $white;
+    &.btn-icon-right {
+      i:before {
+        -webkit-mask-size: 17px;
+        mask-size: 17px;
+        background-color: $-twitter-color;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 40px rgba($-twitter-color, .6);
+    }
+  }
+  &.btn-discord {
+    background: $-discord-color;
+    color: $white;
+    &.btn-icon-right {
+      i:before {
+        -webkit-mask-size: 17px;
+        mask-size: 17px;
+        background-color: $-discord-color;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 40px rgba($-discord-color, .6);
+    }
+  }
+  &.ath-btn-more {
+    &:before {
+      content: attr(data-hide);
+    }
+
+    &.collapsed {
+      &:before {
+        content: attr(data-open);
+      }
+    }
+  }
+
+  @include media-break-point-mobile {
+    font-size: 15px;
+    padding: 12px 17px;
+
+    &.btn-icon-right {
+      padding-right: 60px;
+
+      i {
+        right: 14px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// Ripple Effect
+.ripple {
+  position: absolute;
+  background: $white;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  animation: rippleEffect 1.5s 1;
+  opacity: 0;
+}
+@keyframes rippleEffect {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(100);
+    opacity: 0;
+  }
+}
+
+.coming-soon-label {
+  position: relative;
+  display: inline-block;
+  font-size: 38px;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: $white;
+  padding: 3px 19px;
+  border: 7px solid $white;
+  opacity: 0.6;
+  letter-spacing: 0.105em;
+  transform: rotate(-10deg);
+
+  @include media-break-point-mobile {
+    font-size: 26px;
+    padding: 2px 15px;
+    border-width: 5px;
+  }
+}
+
+.cursor {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 100;
+  &--large {
+    --size: 40px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+  &--small {
+    --size: 10px;
+    background: rgb(198, 179, 255);
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+.icon-discort,
+.icon-instagram,
+.icon-telegram,
+.icon-reddit,
+.icon-twitter,
+.icon-linkedin,
+.icon-linkedin-2,
+.icon-linktree-2,
+.icon-medium,
+.icon-facebook,
+.icon-youtube,
+.icon-tiktok,
+.icon-opensea{
+  &:before {
+    content: " ";
+    display: block;
+    width: 25px;
+    height: 20px;
+    position: relative;
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.icon-linkedin-2,
+.icon-linktree-2, {
+    &:before {
+      width: 35px;
+      height: 30px;
+    }
+}
+
+
+.icon-linkedin:before{
+  -webkit-mask: url("/../img/social-media-icons/linkedin-2.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/linkedin-2.svg") no-repeat center;
+}
+.icon-linkedin-2:before {
+  -webkit-mask: url("/../img/social-media-icons/linkedIn.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/linkedIn.svg") no-repeat center;
+}
+.icon-linktree-2:before {
+  -webkit-mask: url("/../img/social-media-icons/linktree-2.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/linktree-2.svg") no-repeat center;
+}
+
+.icon-discort:before {
+  -webkit-mask: url("/../img/social-media-icons/discord.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/discord.svg") no-repeat center;
+}
+
+.icon-instagram:before {
+  -webkit-mask: url("/../img/social-media-icons/instagram.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/instagram.svg") no-repeat center;
+}
+
+.icon-telegram:before {
+  -webkit-mask: url("/../img/social-media-icons/telegram.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/telegram.svg") no-repeat center;
+}
+.icon-reddit:before {
+  -webkit-mask: url("/../img/social-media-icons/reddit.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/reddit.svg") no-repeat center;
+}
+.icon-twitter:before {
+  -webkit-mask: url("/../img/social-media-icons/twitter.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/twitter.svg") no-repeat center;
+}
+.icon-tiktok:before {
+  -webkit-mask: url("/../img/social-media-icons/tiktok.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/tiktok.svg") no-repeat center;
+}
+
+.icon-youtube:before {
+  -webkit-mask: url("/../img/social-media-icons/youtube.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/youtube.svg") no-repeat center;
+}
+.icon-medium:before {
+  -webkit-mask: url("/../img/social-media-icons/medium.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/medium.svg") no-repeat center;
+}
+.icon-facebook:before {
+  -webkit-mask: url("/../img/social-media-icons/facebook.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/facebook.svg") no-repeat center;
+}
+.icon-opensea:before {
+  -webkit-mask: url("/../img/social-media-icons/opensea.svg") no-repeat center;
+  mask: url("/../img/social-media-icons/opensea.svg") no-repeat center;
+}
