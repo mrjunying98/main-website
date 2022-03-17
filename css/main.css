@@ -1671,7 +1671,7 @@ em {
     left: calc(50% - .05rem);
     width: .1rem;
     height: calc(100% - 1rem);
-    background: linear-gradient(80.49deg, #9665f9 25.29%, #6784f5 71.56%);
+    background: linear-gradient(80.49deg, #fff 25.29%, #fff 71.56%);
 }
 
 .rbrm-dot {
@@ -1728,21 +1728,21 @@ em {
 }
 
 .rbrm-item__date {
-    color: #ff9314;
+    color: #fff;
     text-align: right;
     margin-bottom: .4rem;
     transition: color .3s linear;
 }
 
 .rbrm-item__title {
-    color: #ff9314;
+    color: #fff;
     text-align: right;
     transition: color .3s linear;
 }
 
 .rbrm-item__text {
     max-width: 17.5rem;
-    color: #ff9314;
+    color: #fff;
     transition: color .3s linear;
     font-weight: 400;
     padding-top: 2.2rem;
@@ -2174,7 +2174,7 @@ em {
     top: 0;
     width: 100%;
     height: 100%;
-    background: url(../img/bg-product-soon-0.png) top no-repeat;
+    background: url(../img/bg-product-soon-0.jpg) top no-repeat;
     background-size: 1620px;
     filter: blur(8px);
 }
