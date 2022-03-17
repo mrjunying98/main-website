@@ -1922,11 +1922,11 @@ em {
 }
 
 .hero--description p {
-    font-size: 24px;
+    font-size: 22px;
     width: 60%;
-    color: #e0e0e0;
+    color: #fff;
     line-height: 1.3;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .hero--description-btn {
