@@ -746,14 +746,14 @@ em {
 }
 
 .ath-btn.btn-twitter {
-    background: #0d77f0;
+    background: #7650e1;
     color: #fff;
 }
 
 .ath-btn.btn-twitter.btn-icon-right i:before {
     -webkit-mask-size: 17px;
     mask-size: 17px;
-    background-color: #0d77f0;
+    background-color: #7650e1;
 }
 
 .ath-btn.btn-twitter:hover {
@@ -761,14 +761,14 @@ em {
 }
 
 .ath-btn.btn-discord {
-    background: #5662f6;
+    background: #ecab5b;
     color: #fff;
 }
 
 .ath-btn.btn-discord.btn-icon-right i:before {
     -webkit-mask-size: 17px;
     mask-size: 17px;
-    background-color: #5662f6;
+    background-color: #ecab5b;
 }
 
 .ath-btn.btn-discord:hover {
