@@ -1318,7 +1318,7 @@ em {
     right: -1rem;
     z-index: 9;
     transition: all .2s linear;
-    background-color: #7a31ac;
+    background-color: #ff9314;
     border-radius: 50%;
 }
 
@@ -1372,8 +1372,8 @@ em {
 
 .rbpu-container {
     height: 100%;
-    background-color: #7a31ac;
-    border: .1rem solid #7a31ac;
+    background-color: #ff9314;
+    border: .1rem solid #ff9314;
     border-radius: .8rem;
     box-shadow: 1px 4px 19px rgba(108, 88, 234, .6);
 }
@@ -1418,7 +1418,7 @@ em {
 
 .rbpu__about {
     margin-bottom: 1.2rem;
-    color: #7a31ac;
+    color: #ff9314;
 }
 
 .rbpu__img {
@@ -1686,7 +1686,7 @@ em {
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(122, 49, 172, .2);
-    box-shadow: 0 0 1rem .3rem #7a31ac;
+    box-shadow: 0 0 1rem .3rem #fff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1728,21 +1728,21 @@ em {
 }
 
 .rbrm-item__date {
-    color: #7a31ac;
+    color: #ff9314;
     text-align: right;
     margin-bottom: .4rem;
     transition: color .3s linear;
 }
 
 .rbrm-item__title {
-    color: #7a31ac;
+    color: #ff9314;
     text-align: right;
     transition: color .3s linear;
 }
 
 .rbrm-item__text {
     max-width: 17.5rem;
-    color: #7a31ac;
+    color: #ff9314;
     transition: color .3s linear;
     font-weight: 400;
     padding-top: 2.2rem;
@@ -1771,12 +1771,12 @@ em {
 
 .rbrm-item__link {
     transition: none;
-    color: #7a31ac;
+    color: #ff9314;
     text-decoration: underline;
 }
 
 .rbrm-item__link:hover {
-    color: #7a31ac;
+    color: #ff9314;
 }
 
 .rbrm-item.active .rbrm-item__date,
@@ -1840,7 +1840,7 @@ em {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #7a31ac;
+    background-color: #ff9314;
     overflow: hidden;
     border-radius: .8rem;
     line-height: 0;
@@ -1867,12 +1867,17 @@ em {
     color: #fff;
     margin-bottom: .2rem;
     text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+
 }
 
 .rbt-item__function {
-    color: #7a31ac;
+    color: #ff9314;
     text-align: center;
     margin: 2px -1rem 0;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .rbt-item__link {
@@ -2460,7 +2465,7 @@ em {
     position: fixed;
     top: 50%;
     left: -56px;
-    background: #7a31ac;
+    background: #ff9314;
     color: #fff;
     font-size: 16px;
     letter-spacing: .5px;
@@ -2576,7 +2581,7 @@ em {
     border-radius: .6rem;
     background-color: transparent;
     box-shadow: none;
-    border: 1px solid #7a31ac;
+    border: 1px solid #ff9314;
     padding: 0 .5rem;
     color: #fff;
     outline: none;
